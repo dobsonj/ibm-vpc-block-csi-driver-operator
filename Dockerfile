@@ -1,5 +1,4 @@
-FROM golang:1.16.3 as builder
-#FROM registry.ci.openshift.org/ocp/builder:rhel-8-golang-1.16-openshift-4.9 as builder // TODO change base image
+FROM registry.ci.openshift.org/ocp/builder:rhel-8-golang-1.16-openshift-4.10 AS builder
 
 WORKDIR /go/src/github.com/IBM/ibm-vpc-block-csi-driver-operator
 ADD . /go/src/github.com/IBM/ibm-vpc-block-csi-driver-operator
